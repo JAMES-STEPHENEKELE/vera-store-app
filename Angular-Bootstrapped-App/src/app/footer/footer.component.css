@@ -1,0 +1,42 @@
+/* .brandlog{
+    display: block;
+}
+.log{
+    display: block;
+ list-style: none;
+ justify-content: center;
+}  
+
+li{
+    font-size: 36px;
+    color: blue;
+    justify-content: center;
+
+}
+.gone{
+    display: inline-block;
+}
+li{
+    justify-content: center;
+} */
+.brandlog {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .log {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 20px;
+    
+  }
+  
+  .log li {
+    margin: 0 200px;
+    line-height: 40px;
+    color: blue;
+    font-size: 32px;
+
+  }

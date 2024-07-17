@@ -1,0 +1,15 @@
+<div class="priceList">
+    <img [src]="product.pImage">
+    <p>Name: {{product.name}}</p>
+    <p>Price: {{'$' + product.price}}</p>
+    <p>Color: {{product.color}}</p>
+    <p>Discounted Price: {{getDiscountedPrice().toFixed(2)}}</p>
+    <p>{{product.inStock > 0 ? 'Only ' + product.inStock + ' items left': 'Not in Stock'}}</p>
+    <button (click)="decrementCartValue()">-</button>
+    <span>{{ addToCart}}</span>
+    <button (click)="incrementCartValue()">+</button>
+    <!-- <button [disabled]="!(product.inStock)">Buy Now</button> -->
+    <!-- <input (input)="onNameChange($event)"> -->
+    <!-- <p>Name={{name}}</p> -->
+
+</div>
